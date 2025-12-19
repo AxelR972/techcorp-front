@@ -1,5 +1,6 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { Bell, Moon, Search, Settings, Zap } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 export function Navbar() {
   return (
@@ -11,10 +12,10 @@ export function Navbar() {
             TechCorp
           </div>
           <div className="hidden gap-6 text-sm font-medium text-neutral-50 md:flex">
-            <a className="text-neutral-50">Dashboard</a>
-            <a>Tools</a>
-            <a>Analytics</a>
-            <a>Settings</a>
+            <NavLink to="/" className="text-neutral-50">Dashboard</NavLink>
+            <NavLink to={"/tools"}>Tools</NavLink>
+            <NavLink to={"/analytics"}>Analytics</NavLink>
+            <NavLink to={"/settings"}>Settings</NavLink>
           </div>
         </div>
 

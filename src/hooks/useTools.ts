@@ -6,7 +6,7 @@ export interface Tool {
   category: string;
   active_users_count: number;
   monthly_cost: number;
-  status: "Active" | "Expiring" | "Unused";
+  status: "active" | "expiring" | "unused";
 }
 
 export function useTools() {

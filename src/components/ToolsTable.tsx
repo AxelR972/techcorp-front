@@ -39,9 +39,9 @@ export function ToolsTable() {
               <td>
                 <span
                   className={`rounded-full px-2 py-1 text-xs font-medium ${
-                    tool.status === "Active"
+                    tool.status === "active"
                       ? "bg-green-100 text-green-700"
-                      : tool.status === "Expiring"
+                      : tool.status === "expiring"
                       ? "bg-orange-100 text-orange-700"
                       : "bg-red-100 text-red-700"
                   }`}
